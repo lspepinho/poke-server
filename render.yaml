@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: poketype-server
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20
